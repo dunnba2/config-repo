@@ -12,10 +12,10 @@ eureka:
 zuul:
   routes:
     flashcard-service:
-      path: /flashcard/*
+      path: /flashcard/**
       strip-prefix: true
       serviceId: flashcard-service
     user-service:
-      path: /users/*
+      path: /users/**
       strip-prefix: true
       serviceId: user-service  
